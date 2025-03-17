@@ -3,9 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="styles.css">
     <title>My Personal Webpage</title>
+    
+
 </head>
 <body>
+    <header>
+        <h1> Aaron Philip</h1>
+        <nav> 
+            <ul>
+                <li> <a href="#about"> About </a></li>
+                <li> <a href="#skills"> Skills </a></li>
+                <li> <a href="#projects"> Projects </a></li>
+                <li> <a href="#contact"> Contact </a></li>
+            </ul>
+        </nav>
+     </header>
+
+     <main>
+        <section id="about" class="profile">
+            <figure> 
+                <img src="images/ap_profile.JPG" alt = "Aaron Philip" class="profile-image">
+                <figcaption> Aaron Philip</figcaption>
+            </figure>
+            <article class="bio">
+                <h2> About me </h2>
+                <p> 
+                    Hi, my name is Aaron Philip. I am a current Masters of Engineering student in Computer Science at Cornell Tech in New York 
+                    City. I finished my bachelor's degree in Computer Science at the University of Michign, Ann Arbor in May 2024. This 
+                    is a small webpage to highlight my interests and skills
+                </p>
+                <details> 
+                    <summary> What would you say your biggest strength is?</summary>
+                    <p> From a technical standpoint, my ability to learn on the fly and pick up things quickly. From a general
+                        point of view, I believe my resilience and determination to get the best out of every day helps me stay ahead
+                        of things.
+                    </p>
+                </details>
+                
+
+            </article>
+        </section>
+
+        <section id="skills" class="frosted-section">
+            <h2> My Skills</h2>
+            <ul>
+                <li> C++</li>
+                <li> C</li>
+                <li> Python</li>
+                <li> Web Development (HTML,CSS, Javascript)</li>
+                <li> Git</li>
+                <li> PostgreSQL</li>   
+            </ul>
+        </section>
+
+        <section id="projects">
+            <h2> List of Projects</h2>
+            <div class="project-grid">
+                <article class="project">
+                    <h3> Feature Detection and Matching</h3>
+                    <p> Designed and implemented a feature detection system to match image key points under variations in position,
+                        orientation and illumination </p>
+                    <p> Incorporated Harris Corner Detection and MOPS descriptors, enabling robust feature extraction across images </p>
+                </article>
+
+                <article class="project">
+                    <h3> Autostitch</h3>
+                    <p> Formulated an automated image stitching system using ORB feature, RANSAC-based alignment and homographies</p>
+                    <p> Integrated spherical warping and multi-image blending, producing seamless panoramic images from overlapping photos</p>
+                </article>
+
+                <article class="project">
+                    <h3> Dynamic Pricing and Competitive Strategy Optimization</h3>
+                    <p> Developed a machine learning-based demand estimation and price optimization model using logistic regression and
+                        neural networks to optimize pricing.</p>
+                    <p> Engineered a competitive pricing strategy with reinforcement learning, adapting to opponents using game theory.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="random-quote">
+            <h2> Random quotes</h2>
+            <blockquote id="quote-text">Loading a new quote...</blockquote>
+            <p id="quote-author"></p>
+            <button id="new-quote">Get New Quote</button>
+        </section>
+
+        <section id="interactive-section">
+            <h2> Interactive Section with Mouse over activites</h2>
+            <p> Move your mouse over this area to create an effect</p>
+            <canvas id="interactive-canvas" width="100%" height="200"></canvas>
+        </section>
+
+        <section id="contact">
+            <h2> Contact </h2>
+            <address>
+                Linkedin: <a href="https://www.linkedin.com/in/aaronphilip2002/"> linkedin.com/in/aaronphilip2002</a>"
+            </address>
+        </section>
+     </main>
+     <script src="script.js"></script>
+    
+
+  
     
 </body>
 </html>
